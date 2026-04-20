@@ -1,5 +1,5 @@
 
-var PLUGIN_NAME = 'logseq-plugin-sample-kit-typescript'
+var PLUGIN_NAME = 'logseq-draw-db'
 
 module.exports = {
     branches: ['main'],

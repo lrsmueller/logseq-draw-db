@@ -1,54 +1,57 @@
 {
-    "name": "logseq-plugin-sample-kit-typescript",
-    "description": "description here",
-    "repository": "https://github.com/YU000jp/logseq-plugin-sample-kit-typescript.git",
-    "author": "YU000jp",
-    "license": "MIT",
-    "logseq": {
-        "id": "logseq-plugin-sample-kit-typescript",
-        "title": "Sample Kit",
-        "icon": "./icon.svg",
-        "main": "./dist/index.html"
-    },
-    "effect": true,
-    "private": true,
-    "scripts": {
-        "dev": "vite",
-        "build": "tsc && vite build --mode=dev",
-        "prod": "vite build"
-    },
-    "dependencies": {
-        "@logseq/libs": "0.2.3",
-        "logseq-l10n": "^0.2.0"
-    },
-    "devDependencies": {
-        "@semantic-release/changelog": "^6.0.3",
-        "@semantic-release/exec": "^7.1.0",
-        "@semantic-release/git": "^10.0.1",
-        "@types/node": "^24.9.2",
-        "conventional-changelog-conventionalcommits": "^9.1.0",
-        "cz-conventional-changelog": "^3.3.0",
-        "jest": "^30.2.0",
-        "npx": "^10.2.2",
-        "rollup-plugin-string": "^3.0.0",
-        "semantic-release": "^24.2.9",
-        "typescript": "^5.9.3",
-        "vite": "^6.4.1",
-        "vite-plugin-logseq": "^1.1.2"
-    },
-    "config": {
-        "commitizen": {
-            "path": "cz-conventional-changelog"
-        }
-    },
-    "commitlint": {
-        "extends": [
-            "@commitlint/config-conventional"
-        ]
-    },
-    "husky": {
-        "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-        }
+  "name": "logseq-draw-db",
+  "description": "Logseq draw plugin for DB graphs using Excalidraw",
+  "repository": "https://github.com/lrsmueller/logseq-draw-db.git",
+  "author": "lrsmueller",
+  "license": "MIT",
+  "logseq": {
+    "id": "logseq-draw-db",
+    "title": "Draw DB",
+    "icon": "./icon.svg",
+    "main": "./dist/index.html"
+  },
+  "effect": true,
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build --mode=dev",
+    "prod": "vite build"
+  },
+  "dependencies": {
+    "@excalidraw/excalidraw": "^0.18.0",
+    "@logseq/libs": "0.2.3",
+    "logseq-l10n": "^0.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@types/node": "^24.9.2",
+    "conventional-changelog-conventionalcommits": "^9.1.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "jest": "^30.2.0",
+    "npx": "^10.2.2",
+    "rollup-plugin-string": "^3.0.0",
+    "semantic-release": "^24.2.9",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.1",
+    "vite-plugin-logseq": "^1.1.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
     }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
 }

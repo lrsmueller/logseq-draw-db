@@ -4,7 +4,8 @@ This is the canonical agent entrypoint for this repository.
 
 ## Scope
 
-- Repo: `logseq-plugin-sample-kit-typescript`
+- Repo: `logseq-draw-db`
+- Plugin ID: `logseq-draw-db`
 - Stack: TypeScript, Vite, `@logseq/libs`
 - Runtime: Logseq Desktop plugin iframe
 
